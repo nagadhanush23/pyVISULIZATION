@@ -1,0 +1,25 @@
+# Data Profiling Tool
+
+This Python package provides a comprehensive solution for profiling datasets. It generates a report that includes:
+- Missing value analysis.
+- Column categorization by data type.
+- Identification and removal of duplicate rows and constant columns.
+- Boxplots for numeric columns to detect outliers.
+- Distribution charts for visualizing column distributions.
+
+## Features
+- Generates HTML, PDF, or Word reports.
+- Visualizations for numeric and categorical data.
+- User-friendly output with before-and-after comparisons for duplicates and constant columns.
+
+## Installation
+```bash
+pip install pandas matplotlib seaborn fpdf python-docx
+
+import pandas as pd
+from data_profiling_tool import DataProfiler
+
+# Load your dataset
+data = pd.read_csv("your_dataset.csv")
+
+Make sure you give data in csv file.
